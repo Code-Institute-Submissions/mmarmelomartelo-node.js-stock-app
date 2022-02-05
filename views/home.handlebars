@@ -1,4 +1,7 @@
-<br>
-<h1>This is my handbars page!!</h1>
-<br>
+<h1>This is my handbars page with my API object!!</h1>
+<br><br>
 <p>{{stock}}</p>
+
+{{#each stock}}
+  {{@key}} | {{this}} <br>
+  {{/each}}
