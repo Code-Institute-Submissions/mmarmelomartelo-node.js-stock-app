@@ -1,7 +1,30 @@
-<h1>This is my handbars page with my API object!!</h1>
-<br><br>
-<p>{{stock}}</p>
+<br>
+<div class="jumbotron bg-light">
+  <hr class="my-4">
+  <h1 class="display-4">{{stock.companyName}} ({{stock.symbol}})</h1>
+</h1><br>
+  <p class="lead"><strong>Lastet Price:</strong> {{stock.latestPrice}}<br>
+<strong>Previous Close:</strong> {{stock.previousClose}}<br>
+<strong>Percent Change</strong> {{stock.changePercent}}<br>
+<strong>Market Cap:</strong> {{stock.marketCap}}<br>
+<strong>YTD Change:</strong> {{stock.ytdChange}}<br>
+<strong>52Wk High:</strong> {{stock.week52High}}<br>
+<strong>52Wk Low:</strong> {{stock.week52Low}}<br><br>
+<strong>Market Place:</strong> {{stock.primaryExchange}}<br></p>
+<hr class="my-4">
+   
+  </p>
+</div>
+
+
+<!--
 
 {{#each stock}}
-  {{@key}} | {{this}} <br>
-  {{/each}}
+ 
+
+<p>{{stock}}</p>
+
+
+{{@key}} | {{this}} <br>
+  {{/each}} 
+-->
