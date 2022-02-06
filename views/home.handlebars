@@ -3,23 +3,27 @@
 
 {{posted_stuff}} <!// this is only used for testing -->
 
-<br>
+<br/>
 <div class="jumbotron bg-light">
   <hr class="my-4">
   <h1 class="display-4">{{stock.companyName}} ({{stock.symbol}})</h1>
 </h1><br>
-  <p class="lead"><strong>Lastet Price:</strong> {{stock.latestPrice}}<br>
-<strong>Previous Close:</strong> {{stock.previousClose}}<br>
-<strong>Percent Change</strong> {{stock.changePercent}}<br>
-<strong>Market Cap:</strong> {{stock.marketCap}}<br>
-<strong>YTD Change:</strong> {{stock.ytdChange}}<br>
+<p class="lead">
+<strong>Company Name:</strong> {{stock.companyName}}<br>
+<strong>Company Symbol:</strong> {{stock.symbol}}<br>
+<strong>Lastet Price:</strong> $ {{stock.latestPrice}}<br>
+<strong>Previous Close:</strong> $ {{stock.previousClose}}<br>
+<strong>Percent Change</strong> {{stock.changePercent}}%<br>
+<strong>Market Cap:</strong> $ {{stock.marketCap}}<br>
+<strong>YTD Change:</strong> {{stock.ytdChange}}%<br>
 <strong>52Wk High:</strong> {{stock.week52High}}<br>
 <strong>52Wk Low:</strong> {{stock.week52Low}}<br><br>
 <strong>Market Place:</strong> {{stock.primaryExchange}}<br></p>
-<hr class="my-4">
-   
-  </p>
+</p>
+<hr class="my-4">   
 </div>
+
+
 
 
 <!--
