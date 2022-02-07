@@ -39,10 +39,11 @@ app.set('view engine', 'handlebars');
 
 app.get('/', (req, res) => {
     call_api(function(returnedFromAPI) {
-        res.render('home', {
-            stock: returnedFromAPI
-        });
-    });
+            res.render('home', {
+                stock: returnedFromAPI
+            });
+        },
+        "fb");
 });
 
 
