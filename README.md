@@ -16,8 +16,11 @@ The goal of this project was to create a simple webpage to check the values of s
 * This basic layout is kept over different pages for consistency.
 
 ![Imgur](https://i.imgur.com/29Ac4Azl.png)
----
-* Page 2 give instructions to the user on how to use the Stock App
+
+
+
+
+* The page 2 give instructions to the user on how to use the Stock App
 * It  also has a table listing the 50 most expensive companies nowadays and their respective standard code used in the marketplace, which indirectly invites users to search.
 * This basic layout is kept over different pages for consistency.
 
@@ -46,25 +49,34 @@ The form also works perfectly in these devices.
 ## Code Validation
 
 The code was tested at:
+
 * W3C CSS Validation Service
+
+
 ![Imgur](https://i.imgur.com/mXyffC5l.png)
 
+
 * Nu Html Checker
+
+
 ![Imgur](https://i.imgur.com/FDvtclql.png)
 
-The code pass in both validations tools.
+
+**The code pass in both validations tools.**
 
 ---
 
 
-##Performance 
+## Performance 
 
 *The App was tested for lighthouse performance and pass with high scores
+
 ![Imgur](https://i.imgur.com/aENCWc8l.png)
 
 
 ## Bugs and limitations
 The majority of major bugs were caused due the Heroku deployment in Gitpod
+
 ### Solved bugs
 
 1. The Heroku Toolbelt:
@@ -76,18 +88,18 @@ The correct installation was checked using the command:
 
 heroku --version
 
-## limitation:
+## Limitation:
 
 Every time the logout gitpod, the Heroku toolbelt needs to be reinstalled.
 
  2. Login fails to Heroku
- 
-*The regular command line  to login at Heroku is:
+
+* The regular command line  to login at Heroku is:
 heroku login
 But it fails to login due security reasons since gitpod probably use a proxy which Heroku detects.
 I was able to overcome this limitation to login using: heroku login -i
 
-## limitations:
+## Limitations:
 
 The input search only accept the standard company codes. Otherwise, no data is retuned. I realized that the best user experience would be implementing an autocomplete functionality and return an clear response to the users if their searches  did not return any result due to wrong input
 
@@ -96,27 +108,33 @@ The input search only accept the standard company codes. Otherwise, no data is r
 ## Deployment
 
 The page was deployed in the Heroku free pages following the instructions from Heroku documentation. The basic steps are:
-*Install Heroku toolbelt:
+* Install Heroku toolbelt:
 curl https://cli-assets.heroku.com/install-ubuntu.sh | sudo sh 
-*Login:
+
+* Login:
 heroku login -i
 
-with your Heroku login data, provide:
-email to login 
-provide password
+* With your Heroku login data, provide:
 
-*Add SSH key for your github directory:
+* email to login
+
+* provide password
+
+* Add SSH key for your github directory:
+
 Heroku keys:add
-*Create your App:
+
+* Create your App:
+
 heroku create
 
-*Push your new Heroku App:
+* Push your new Heroku App:
+
 git push heroku main
 
+## The link to access is below:
 
-The link to access is below:
-
-[Stock App](https://nodejs-stockstockapp.herokuapp.com/)
+**[Stock App](https://nodejs-stockstockapp.herokuapp.com/)**
 
 ---
 
